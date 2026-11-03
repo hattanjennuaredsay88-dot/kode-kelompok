@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#25304d">
+  <title>Kitchen Workshop — School Canteen Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="upgrade-page">
+  <header class="game-header">
+    <a class="brand" href="dashboard.html"><span class="pixel-logo pixel-logo-small" aria-hidden="true"></span><span>← DASHBOARD</span></a>
+    <div class="game-title">KITCHEN WORKSHOP</div>
+    <div class="game-user" id="upgradeUsername">CHEF</div>
+  </header>
+  <main class="upgrade-wrap">
+    <section class="upgrade-hero">
+      <div><span class="pixel-kicker">SCHOOL CANTEEN • EQUIPMENT SHOP</span>
+        <h1>Kitchen Workshop</h1>
+        <p>Investasikan uang kantin untuk mempercepat peralatan. Upgrade yang dibeli tersimpan di akunmu dan langsung berlaku saat bermain.</p>
+      </div>
+      <div class="workshop-art pixel-workshop-art" aria-hidden="true"><span class="pixel-logo pixel-logo-large"></span><i class="pixel-equipment pixel-stove"></i></div>
+    </section>
+    <section class="upgrade-wallet-row">
+      <div class="upgrade-wallet"><small>UANG KANTIN</small><strong id="workshopWallet">Rp0</strong></div>
+      <div class="upgrade-level-total"><small>TOTAL LEVEL UPGRADE</small><strong id="workshopLevelTotal">0</strong></div>
+      <div class="upgrade-tip"><b>PIXEL TIP</b><span>Setiap upgrade mengurangi waktu memasak sekitar 12%. Maksimum level 6.</span></div>
+    </section>
+    <div class="workshop-heading"><div><span class="pixel-kicker">UPGRADE YOUR TOOLS</span><h2>Peralatan Dapur</h2></div><a class="button button-outline" href="game.html">KEMBALI BERMAIN</a></div>
+    <section id="workshopGrid" class="workshop-grid" aria-live="polite"></section>
+    <p class="workshop-footer">SCHOOL CANTEEN SIMULATOR • BUILD A FASTER KITCHEN!</p>
+  </main>
+  <div class="toast" id="workshopToast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+  <script src="upgrades.js"></script>
+</body>
+</html>
